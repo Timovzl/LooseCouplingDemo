@@ -1,0 +1,12 @@
+<Project>
+
+	<PropertyGroup>
+		<AssemblyName>Timovzl.LooseCouplingDemo.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>Timovzl.LooseCouplingDemo.$(MSBuildProjectName)</RootNamespace>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>Enable</Nullable>
+		<ImplicitUsings>Enable</ImplicitUsings>
+		<ManagePackageVersionsCentrally>True</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+
+</Project>
