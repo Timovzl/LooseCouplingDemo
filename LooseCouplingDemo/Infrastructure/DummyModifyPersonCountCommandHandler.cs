@@ -2,7 +2,7 @@ using LooseCouplingDemo.Domain;
 
 namespace LooseCouplingDemo.Infrastructure;
 
-public class DummySyncEntityCommandHandler : IModifyPersonCountCommandHandler
+public class DummyModifyPersonCountCommandHandler : IModifyPersonCountCommandHandler
 {
 	public int Count { get; private set; }
 

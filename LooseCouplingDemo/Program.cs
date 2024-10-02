@@ -21,7 +21,7 @@ public class Program
 		builder.Services.AddSingleton<IEventHandler<PersonaliaChangedEvent>, AnnouncePersonaliaChangesPolicy>();
 		builder.Services.AddSingleton<TrackPersonCountPolicy>();
 		builder.Services.AddSingleton<IEventHandler<PersonaliaChangedEvent>, TrackPersonCountPolicy>();
-		builder.Services.AddSingleton<IModifyPersonCountCommandHandler, DummySyncEntityCommandHandler>();
+		builder.Services.AddSingleton<IModifyPersonCountCommandHandler, DummyModifyPersonCountCommandHandler>();
 
 		var app = builder.Build();
 

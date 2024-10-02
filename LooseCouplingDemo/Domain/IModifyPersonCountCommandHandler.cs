@@ -9,7 +9,7 @@ public interface IModifyPersonCountCommandHandler
 	Task HandleAsync(int deltaCount, CancellationToken cancellationToken);
 }
 
-// An explicit command is optional, but superfluous :)
+// An explicit command is optional, but perhaps needlessly verbose :)
 //public class SyncEntityCommand
 //{
 //	public required string DeltaCount { get; init; }
