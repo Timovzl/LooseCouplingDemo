@@ -9,7 +9,7 @@ namespace LooseCouplingDemo.Controllers;
 public class PersonaliaController : ControllerBase
 {
 	/// <summary>
-	/// Allows third parties to send us push updates of changes to their entities.
+	/// Allows a vendor send us push updates of changes to personalia.
 	/// </summary>
 	[HttpPost]
 	public async Task<IActionResult> PostPersonaliaChangeAsync(IngestPersonaliaChangeCommandHandler commandHandler, [FromBody] PostPushUpdateRequest request, CancellationToken cancellationToken)

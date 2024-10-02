@@ -6,9 +6,9 @@ namespace LooseCouplingDemo.Domain;
 public class AnnouncePersonaliaChangesPolicy
 	: IPersonaliaChangedEventHandler // If this...
 {
-	public Task HandleAsync(PersonaliaChangedEvent @event, CancellationToken cancellationToken)
+	public Task HandleAsync(PersonaliaChangedEvent @event, CancellationToken cancellationToken) // ...then that
 	{
-		Console.WriteLine($"Announcing personalia change on person {@event.PersonId}."); // ...then that
+		Console.WriteLine($"Announcing personalia change on person {@event.PersonId}.");
 		return Task.CompletedTask;
 	}
 }

@@ -5,7 +5,7 @@ using LooseCouplingDemo.Domain;
 namespace LooseCouplingDemo.Application;
 
 /// <summary>
-/// "Whenever we ingest a personalia change update, we broadcast an event that describes in our own Bounded Context's terms what has happened (irrespective of who cares)."
+/// "Whenever we ingest a personalia change update, we broadcast a domain event that describes in our own Bounded Context's terms what has happened (irrespective of who cares)."
 /// </summary>
 public class IngestPersonaliaChangeCommandHandler(
 	IEventBus eventBus)
